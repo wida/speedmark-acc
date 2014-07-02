@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'Speedmark - Accounting Application',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -60,6 +60,14 @@ return array(
 			'charset' => 'utf8',
 		),
 		*/
+		// uncomment the following to use a Postgresql database
+		'db'=>array(
+			'connectionString' => 'pgsql:host=localhost;dbname=speedmark-acc',
+			'emulatePrepare' => true,
+			'username' => 'speedmark-acc',
+			'password' => 'speedmark-acc',
+			'charset' => 'utf8',
+		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
