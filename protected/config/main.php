@@ -30,6 +30,9 @@ return array(
 
 	// application components
 	'components'=>array(
+		'localtime'=>array(
+        	'class'=>'LocalTime',
+        ),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -109,6 +112,7 @@ return array(
 		'paidVia'=>array(''=>'', 'Transfer'=>'Transfer', 'Cash'=>'Cash', 'Cheque'=>'Cheque', 'Giro'=>'Giro'),
 		'cashType'=>array('In'=>'In', 'Out'=>'Out'),
 		'TFBooleanValue'=>array(''=>'', 'T'=>'Ya/Sudah', 'F'=>'Tidak/Belum'),
-		'dateFormat'=>'yy-mm-dd',
+		'datePickerDateFormat'=>'yy-mm-dd',
+		'gridDateFormat'=>'Y-m-d'
 	),
 );

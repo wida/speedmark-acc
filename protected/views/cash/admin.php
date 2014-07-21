@@ -39,13 +39,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'cash-grid',
+	'nullDisplay'=>'',
 	'dataProvider'=>$model->search(),
 	/*'filter'=>$model,*/
 	'columns'=>array(
 		'cash_id',
-		'tanggal' => array(
-				'type' => 'date',
+		'cash_date'=> array(
 				'name' => 'cash_date',
+				'value' => 'date(Yii::app()->params["gridDateFormat"],strtotime("+1 days", strtotime($data->cash_date)))'
 			),
 		'cash_paid_to',
 		'cash_amount',

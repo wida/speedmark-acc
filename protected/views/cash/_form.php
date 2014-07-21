@@ -34,7 +34,7 @@
 			    'attribute' => 'cash_date',
 			    'options' => array(
 			        'showOn' => 'both',             // also opens with a button
-			        'dateFormat' => Yii::app()->params['dateFormat'],     // format of "2012-12-25"
+			        'dateFormat' => Yii::app()->params['datePickerDateFormat'],     // format of "2012-12-25"
 			        'showOtherMonths' => true,      // show dates in other months
 			        'selectOtherMonths' => true,    // can seelect dates in other months
 			        'changeYear' => true,           // can change year
